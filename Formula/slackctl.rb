@@ -5,21 +5,21 @@
 class Slackctl < Formula
   desc "A fast, single-binary Slack CLI for AI agents and humans"
   homepage "https://github.com/cluas/slackctl"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cluas/slackctl/releases/download/v0.1.7/slackctl_darwin_amd64.tar.gz"
-      sha256 "74537d549bdd19f827431b15c463a7881ff7a3578e4e22059806c5481f86a834"
+      url "https://github.com/cluas/slackctl/releases/download/v0.1.8/slackctl_darwin_amd64.tar.gz"
+      sha256 "cb721cceeef1dbea48e4ede65daf5e4cf4b10d485148e8b94b3183b420f31840"
 
       define_method(:install) do
         bin.install "slackctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cluas/slackctl/releases/download/v0.1.7/slackctl_darwin_arm64.tar.gz"
-      sha256 "6a3fd71ce8c446ada262873baeae0c079a8f6ac58802138569b164df25a4eb88"
+      url "https://github.com/cluas/slackctl/releases/download/v0.1.8/slackctl_darwin_arm64.tar.gz"
+      sha256 "d0fa55b6b9802636e767c664512692dc975700177812400bb7ec02c3296b177b"
 
       define_method(:install) do
         bin.install "slackctl"
@@ -29,15 +29,15 @@ class Slackctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cluas/slackctl/releases/download/v0.1.7/slackctl_linux_amd64.tar.gz"
-      sha256 "224c7b88e33af6f038b60b628a16b2e80ea0ed1aff733fca463013bb8b129f44"
+      url "https://github.com/cluas/slackctl/releases/download/v0.1.8/slackctl_linux_amd64.tar.gz"
+      sha256 "bf276ddfc20b26bfb041906d190a9cd3399e0f5fdb51cde428d1069a38b6323f"
       define_method(:install) do
         bin.install "slackctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cluas/slackctl/releases/download/v0.1.7/slackctl_linux_arm64.tar.gz"
-      sha256 "a1e05b0e24892091072e40458e31f53c5308ce57acaca70c5625ac46a751b1c5"
+      url "https://github.com/cluas/slackctl/releases/download/v0.1.8/slackctl_linux_arm64.tar.gz"
+      sha256 "98e0e79244e9607fa3b330cd9f51d9721cf84e5206b9f284fe553d7d206593db"
       define_method(:install) do
         bin.install "slackctl"
       end
